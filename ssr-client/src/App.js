@@ -15,6 +15,10 @@ const LocationComponent = lazy(() =>
   import("./locations/locations.js" /* webpackPrefetch: true */)
 );
 
+const ProductComponent = lazy(() =>
+  import("./product/Product.js" /* webpackPrefetch: true */)
+);
+
 const LoadingScreen = () => {
   return <div>Loading Screen...</div>;
 };
@@ -32,6 +36,7 @@ function App() {
       <Routes>
         <Route path="/cars" element={<CarsComponent />} />
         <Route path="/loc" element={<LocationComponent />} />
+        <Route path="/product" element={<ProductComponent />} />
         <Route path="/" element={<HomeComponent />} />
       </Routes>
     </Suspense>

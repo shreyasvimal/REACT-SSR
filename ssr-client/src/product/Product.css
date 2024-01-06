@@ -1,0 +1,26 @@
+.product {
+    width: 600px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.product-preview {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-preview-details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.swatches {
+    display: flex;
+    justify-content: center;
+}
+
+.product-swatch {
+    margin-right: 10px;
+}
